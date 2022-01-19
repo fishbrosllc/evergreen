@@ -49,6 +49,14 @@ const sizes = {
   large: {
     height: 40,
     lineHeight: 'lineHeights.1'
+  },
+  xl: {
+    height: 48,
+    lineHeight: 'lineHeights.2'
+  },
+  xxl: {
+    height: 56,
+    lineHeight: 'lineHeights.2'
   }
 }
 

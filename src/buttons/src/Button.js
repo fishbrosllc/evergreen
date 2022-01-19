@@ -2,6 +2,7 @@ import React, { memo, forwardRef } from 'react'
 import cx from 'classnames'
 import PropTypes from 'prop-types'
 import Box, { spacing, dimensions, position, layout } from 'ui-box'
+import radii from '../../../src/themes/default/tokens/radii'
 import { useStyleConfig } from '../../hooks'
 import { IconWrapper } from '../../icons/src/IconWrapper'
 import { getTextPropsForControlHeight } from '../../lib/deprecated-theme-helpers'
@@ -64,6 +65,8 @@ const Button = memo(
   forwardRef(function Button(props, ref) {
     const {
       appearance = 'default',
+      block,
+      bold,
       children,
       className,
       color,
@@ -74,12 +77,13 @@ const Button = memo(
       is = 'button',
       isActive = false,
       isLoading,
+      round,
       ...restProps
     } = props
 
     const { className: themedClassName, ...boxProps } = useStyleConfig(
       'Button',
-      { appearance, color, intent, size: restProps.size || 'medium' },
+      { appearance, block, bold, color, intent, round, size: restProps.size || 'medium' },
       pseudoSelectors,
       internalStyles
     )
@@ -91,6 +95,7 @@ const Button = memo(
 
     return (
       <Box
+        style={{ borderRadius: block ? '0px' : round ? radii[6] : '', fontWeight: bold ? '900' : '' }}
         is={is}
         ref={ref}
         className={cx(themedClassName, className)}
@@ -147,9 +152,24 @@ Button.propTypes = {
   appearance: PropTypes.string,
 
   /**
+   * Whether is a block button
+   */
+  block: PropTypes.bool,
+
+  /**
+   * Whether is a rounded button
+   */
+  round: PropTypes.bool,
+
+  /**
+   * Whether font text is bolded
+   */
+  bold: PropTypes.bool,
+
+  /**
    * The size of the button
    */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf(['small', 'medium', 'large', 'xl', 'xxl']),
 
   /**
    * When true, show a loading spinner before the children.

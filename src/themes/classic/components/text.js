@@ -33,7 +33,9 @@ const sizes = {
   ...textSizes,
   small: textSizes['300'],
   medium: textSizes['400'],
-  large: textSizes['500']
+  large: textSizes['500'],
+  xl: textSizes['600'],
+  xxl: textSizes['700']
 }
 
 export default {

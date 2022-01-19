@@ -35,6 +35,18 @@ const sizes = {
     minWidth: 40,
     fontSize: 'fontSizes.2',
     lineHeight: 'lineHeights.2'
+  },
+  xl: {
+    height: 48,
+    minWidth: 48,
+    fontSize: 'fontSizes.3',
+    lineHeight: 'lineHeights.3'
+  },
+  xxl: {
+    height: 56,
+    minWidth: 56,
+    fontSize: 'fontSizes.4',
+    lineHeight: 'lineHeights.4'
   }
 }
 

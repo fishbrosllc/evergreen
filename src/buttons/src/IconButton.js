@@ -63,7 +63,7 @@ IconButton.propTypes = {
   /**
    * The size of the button
    */
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf(['small', 'medium', 'large', 'xl', 'xxl']),
 
   /**
    * The Evergreen icon or custom icon to render

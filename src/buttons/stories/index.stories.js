@@ -17,7 +17,9 @@ buttonsStory.add('Common', () => (
         options: [
           { label: 'Small (24px)', value: 'small' },
           { label: 'Medium (32px)', value: 'medium' },
-          { label: 'Large (40px)', value: 'large' }
+          { label: 'Large (40px)', value: 'large' },
+          { label: 'XL (48px)', value: 'xl' },
+          { label: 'XXL (56px)', value: 'xxl' }
         ],
         value: 'medium'
       }}
@@ -25,7 +27,7 @@ buttonsStory.add('Common', () => (
       {({ setState, state }) => (
         <React.Fragment>
           <SegmentedControl
-            width={350}
+            width={500}
             options={state.options}
             value={state.value}
             onChange={value => setState({ value })}
@@ -68,6 +70,92 @@ buttonsStory.add('Common', () => (
             </Button>
             <Button size={state.value} appearance="primary" marginRight={16} iconBefore={Icons.EyeOpenIcon}>
               Preview
+            </Button>
+          </Pane>
+          <Pane marginTop={16}>
+            <Button size={state.value} appearance="primary" marginRight={16}>
+              ALL CAPS
+            </Button>
+            <Button size={state.value} appearance="primary" block marginRight={16} iconAfter={Icons.ArrowRightIcon}>
+              Block
+            </Button>
+            <Button
+              size={state.value}
+              appearance="custom"
+              intent="violet500"
+              color="#ffffff"
+              marginRight={16}
+              iconBefore={Icons.EyeOpenIcon}
+            >
+              Custom Color
+            </Button>
+            <Button
+              size={state.value}
+              block
+              appearance="custom"
+              intent="violet500"
+              color="#ffffff"
+              marginRight={16}
+              iconBefore={Icons.EyeOpenIcon}
+            >
+              Custom Color Block
+            </Button>
+            <Button
+              size={state.value}
+              round
+              appearance="custom"
+              intent="violet500"
+              color="#ffffff"
+              marginRight={16}
+              iconBefore={Icons.EyeOpenIcon}
+            >
+              Custom Color Round
+            </Button>
+            <Button
+              size={state.value}
+              round
+              bold
+              appearance="custom"
+              intent="violet500"
+              color="#ffffff"
+              marginRight={16}
+              iconBefore={Icons.EyeOpenIcon}
+            >
+              Custom Color Round Bold
+            </Button>
+            <Button
+              size={state.value}
+              disabled
+              appearance="custom"
+              intent="violet500"
+              color="#ffffff"
+              marginRight={16}
+              iconBefore={Icons.EyeOpenIcon}
+            >
+              Custom Color Disabled
+            </Button>
+            <Button
+              size={state.value}
+              block
+              appearance="custom"
+              intent="linear-gradient(90deg, #2563eb 0%, #6d28d9 35%, #2563eb 100%)"
+              color="white"
+              marginRight={16}
+              iconBefore={Icons.PowerIcon}
+            >
+              CUSTOM BLOCK CAPS GRAD
+            </Button>
+            <Button
+              size={state.value}
+              block
+              disabled
+              appearance="custom"
+              intent="linear-gradient(90deg, #2563eb 0%, #6d28d9 35%, #2563eb 100%)"
+              color="white"
+              marginRight={16}
+              iconBefore={Icons.PowerIcon}
+            >
+              CUSTOM BLOCK CAPS GRAD DISABLED
             </Button>
           </Pane>
           <Pane marginTop={16}>

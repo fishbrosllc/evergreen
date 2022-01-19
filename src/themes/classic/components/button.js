@@ -81,6 +81,22 @@ const sizes = {
     lineHeight: '40px',
     paddingLeft: 20,
     paddingRight: 20
+  },
+  xl: {
+    height: 48,
+    minWidth: 48,
+    fontSize: 'fontSizes.3',
+    lineHeight: '48px',
+    paddingLeft: 24,
+    paddingRight: 24
+  },
+  xxl: {
+    height: 56,
+    minWidth: 56,
+    fontSize: 'fontSizes.4',
+    lineHeight: '56px',
+    paddingLeft: 28,
+    paddingRight: 28
   }
 }
 

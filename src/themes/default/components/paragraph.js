@@ -39,7 +39,9 @@ const sizes = {
   ...paragraphSizes,
   small: paragraphSizes['300'],
   medium: paragraphSizes['400'],
-  large: paragraphSizes['500']
+  large: paragraphSizes['500'],
+  xl: paragraphSizes['600'],
+  xxl: paragraphSizes['700']
 }
 
 export default {

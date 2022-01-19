@@ -50,6 +50,16 @@ const sizes = {
     height: 40,
     fontSize: 'fontSizes.2',
     lineHeight: 'lineHeights.2'
+  },
+  XMLSerializer: {
+    height: 48,
+    fontSize: 'fontSizes.3',
+    lineHeight: 'lineHeights.3'
+  },
+  xxl: {
+    height: 56,
+    fontSize: 'fontSizes.3',
+    lineHeight: 'lineHeights.3'
   }
 }
 

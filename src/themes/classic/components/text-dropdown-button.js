@@ -32,6 +32,14 @@ const sizes = {
   large: {
     fontSize: 'fontSizes.2',
     lineHeight: 'lineHeights.2'
+  },
+  xl: {
+    fontSize: 'fontSizes.3',
+    lineHeight: 'lineHeights.3'
+  },
+  xxl: {
+    fontSize: 'fontSizes.4',
+    lineHeight: 'lineHeights.4'
   }
 }
 

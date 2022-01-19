@@ -14,6 +14,14 @@ const sizes = {
   large: {
     width: 48,
     height: 48
+  },
+  xl: {
+    width: 56,
+    height: 56
+  },
+  xxl: {
+    width: 64,
+    height: 64
   }
 }
 
